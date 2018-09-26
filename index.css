@@ -31,7 +31,7 @@ bottom:300px;
 	
 	position:relative;
 	left:200px;
-	bottom: 2526px;
+	bottom: 2825px;
 	height:310px;
 }
 #he{
@@ -81,6 +81,14 @@ position:relative;
 	left:120px;
 	color:rgb(169,169,169);
 	}
+	.cont{
+		position:relative;
+		top:1150px;
+		left:150px;
+		
+	}
+	
+	
 	
 	a:link{
 		
@@ -115,7 +123,8 @@ position:relative;
 footer{
 	position:relative;
 	bottom:135px;
-	background-color:rgb(60,179,113);;
+	background-color:rgb(60,179,113);
+	height:600px;
 	
 	}
 
@@ -124,7 +133,7 @@ footer{
 	font-family:Buxton Sketch;
 	position:relative;
 	left:450px;
-	bottom:2000px;
+	bottom:2300px;
 	background-color:white;
 	width:600px;
 	height:310px;
@@ -162,7 +171,7 @@ left:643px;
 }
 #headerss{
 	position:relative;
-	bottom:1020px;
+	bottom:1300px;
 	
 }
 #intro1{
@@ -472,7 +481,7 @@ padding-left:10px;
     color: white; 
 	border-radius:5px;
 	transition:0.8s;
-	animation:animate 1 4s;
+	animation:animate 1 8s;
 	
 }
 @keyframes animate{
@@ -480,8 +489,62 @@ padding-left:10px;
 		width:0;
 	}
 	
+}
+	
+	#subm{
+	 width: 40.1%;
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	position:relative;	
+	left:350px;
+	bottom:1300px;
+}
+#fname{
+	width: 19%;
+	height:50px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position:relative;
+	bottom:1550px;
+	left:200px;
 	
 	
 	
+}
+
+
+#mes{
 	
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	position:relative;
+	bottom:1300px;
+	left:-60px;
+font-family:Arial;	
+}	
 	
+	#dropdo{
+		position:relative;
+		bottom:1550px;
+		right:40px;
+		 border-radius: 4px;
+    box-sizing: border-box;
+	width: 19%;
+	height:50px;
+    padding: 12px 20px;
+	    margin: 8px 0;
+	}
+		

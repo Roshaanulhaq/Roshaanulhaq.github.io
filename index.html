@@ -3,6 +3,69 @@
 <head>
 <title>Personal Profile</title>
 	<link href="index.css" type="text/css" rel="stylesheet">
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+ 
+
+  // Time calculations for hours, minutes and seconds
+  
+  var hours = Math.floor((now % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((now % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((now % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+
+ 
+}, 1000);
+
+function validateForm() {
+   var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Please enter your name");
+		
+        return false;
+    }
+	if(!isNaN(x))
+	{
+		alert("Please enter only characters" );
+		
+        return false;
+	}
+	
+	if ((x.length < 6) || (x.length > 15))
+	{
+	alert("Your Character must be 6 to 15 Character");
+	return false;
+	}
+		
+	
+	var y=document.forms["myForm"]["mes"].value;
+	if(y=="")
+	{
+		alert("Message must be filled out");
+		return false;
+	}
+} 
+
+
+</script>	
 </head>
 <body>
 
@@ -105,8 +168,32 @@
 <h2 id="int3"><a href="#con">Contact</a></h2>
 </div>
  
+ 
 <div>
 <img  id="main-im"  src="https://scontent.flhe5-1.fna.fbcdn.net/v/t1.0-9/21768074_1682630001781800_6583614954848049412_n.jpg?_nc_cat=0&oh=4499704ffe9c3b419cd252cbdffafe26&oe=5C37CA53" height="300px" width="250px">
 </div>
+ <form name ="myForm" action="/action_page.php"
+	       method="post">
+<div class="INFO">
+<input type="text" id="fname" name="firstname"
+ placeholder="Name*"  required>
+  <textarea   id="mes" name="message" rows="10" cols="60" placeholder="Message" >
+</textarea>  
+<select id="dropdo" name="Country" >
+  <option value="volvo">Pakistan</option>
+  <option value="saab">USA</option>
+  <option value="mercedes">India</option>
+  <option value="audi">Germany</option>
+</select>
+
+ <button onclick="validateForm()" id="subm">Submit</button>
+ <div id="message">
+ <p>hello</p>
+ </div>
+</div>
+</form>
 </body>
+
+
+
 </html>
